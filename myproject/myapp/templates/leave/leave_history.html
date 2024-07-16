@@ -1,0 +1,6 @@
+<h2>Leave History</h2>
+<ul>
+    {% for leave in leave_requests %}
+        <li>{{ leave.start_date }} - {{ leave.end_date }}: {{ leave.reason }} ({{ leave.approved }})</li>
+    {% endfor %}
+</ul>

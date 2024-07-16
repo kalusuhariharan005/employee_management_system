@@ -1,0 +1,6 @@
+<h2>Attendance History</h2>
+<ul>
+    {% for attendance in attendances %}
+        <li>{{ attendance.clock_in }} - {{ attendance.clock_out }}</li>
+    {% endfor %}
+</ul>
